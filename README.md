@@ -28,7 +28,7 @@ Link: https://docs.google.com/presentation/d/1HL7ryS60yyj5Mo9x1JMojts6lu68KyRJuP
 
 Goals: fine-tuning, frozen layers, and adapter
 
-Given a movie review dataset,
+Given a local language movie review dataset,
 
 - Explore dataset and make choices (classification or regression? train/test split? include movie name?)
 - Choose a recommended model
@@ -59,6 +59,34 @@ Goals: Share your current model on HuggingFace or AdapterHub. After the workshop
 train more and then `git push` your updated model.
 
 - Complete training and README
-- notebook_login() / push_to_hub(model_name)
+- HF: notebook_login() / push_to_hub(model_name)
+- AdapterHub: read docs on how to make a Pull Request
 
 ## Part 2: GPT
+
+Slides: Completing sentences, adding context. Using countries or gender cues to change
+GPT's expectations.
+
+Goals: Understand next-token probabilities.
+
+- Create interesting sentences with local language GPT
+- Use ECCO to visualize token probabilities
+- Different languages prompt differently (Spanish el/la un/una)
+
+## Part 2B: Decoders
+
+Goals: Understand different ways to sample from probabilities.
+
+- Compare results with typical decoding
+- Options for beam search, etc.
+
+## Part 3A: Least time permitting, ROME
+
+- Insert tokens into GPT
+- Edit factual knowledge (ROME, https://github.com/kmeng01/rome)
+
+## Part 3B: Most time permitting, QA / SQuAD / ColBERT
+
+- Explain a SQuAD dataset exists
+- Explain semantic search vs. full text search
+- Give a demo of training ColBERT, adding docs
